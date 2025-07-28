@@ -34,7 +34,7 @@ function levelUp(){
     userSeq=[];
     level++;
     h2.innerText = `Level ${level}`;
-    let randIdx=Math.floor(Math.random()*3);
+    let randIdx=Math.floor(Math.random()*4);
     let randClr=btns[randIdx];
     let randbtn=document.querySelector(`.${randClr}`);
     gameSeq.push(randClr);
@@ -81,5 +81,5 @@ function reset(){
     gameSeq=[];
     userSeq=[];
     level=0;
-    h2.innerText = "Press any key to start the game";
+    
 }
